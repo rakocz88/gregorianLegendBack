@@ -1,5 +1,6 @@
 package com.pilaf.tgl.effect.builder.effects;
 
+import com.pilaf.tgl.effect.builder.Effect;
 import com.pilaf.tgl.effect.builder.EffectItem;
 import com.pilaf.tgl.effect.builder.EffectModel;
 import com.pilaf.tgl.effect.builder.action.items.MagicalDmg;
@@ -14,6 +15,7 @@ import com.pilaf.tgl.effect.builder.templates.ConditionEffect;
 import com.pilaf.tgl.effect.builder.templates.TimeEffect;
 import com.pilaf.tgl.effect.builder.time.items.TimePeriod;
 
+@Effect
 public class BurnUndeadCircle implements EffectItem {
 
     @Override
@@ -26,7 +28,7 @@ public class BurnUndeadCircle implements EffectItem {
 		.creatureTypeList(CreatureType.DEMON).creatureTypeList(CreatureType.DEVIL)
 		.creatureTypeList(CreatureType.UNDEAD).build();
 	TimeEffect timeEffect = new TimePeriod.TimePeriodBuilder().timeUnits(5).build();
-	return new EffectModel.AbilityModelBuilder().actionEffect(actionEffect).areaEffect(areaEffect)
+	return new EffectModel.EffectModelBuilder().actionEffect(actionEffect).areaEffect(areaEffect)
 		.conditionEffect(conditionEffect).timeEffect(timeEffect).build();
     }
 

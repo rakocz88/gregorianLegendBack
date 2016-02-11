@@ -12,7 +12,7 @@ public class EffectModel implements EffectItem {
     private final ConditionEffect conditionEffect;
     private final TimeEffect timeEffect;
 
-    private EffectModel(AbilityModelBuilder builder) {
+    private EffectModel(EffectModelBuilder builder) {
 	this.actionEffect = builder.actionEffect;
 	this.areaEffect = builder.areaEffect;
 	this.conditionEffect = builder.conditionEffect;
@@ -35,29 +35,29 @@ public class EffectModel implements EffectItem {
 	return timeEffect;
     }
 
-    public static class AbilityModelBuilder {
+    public static class EffectModelBuilder {
 
 	ActionEffect actionEffect;
 	AreaEffect areaEffect;
 	ConditionEffect conditionEffect;
 	TimeEffect timeEffect;
 
-	public AbilityModelBuilder actionEffect(ActionEffect effect) {
+	public EffectModelBuilder actionEffect(ActionEffect effect) {
 	    this.actionEffect = effect;
 	    return this;
 	}
 
-	public AbilityModelBuilder areaEffect(AreaEffect areaEffect) {
+	public EffectModelBuilder areaEffect(AreaEffect areaEffect) {
 	    this.areaEffect = areaEffect;
 	    return this;
 	}
 
-	public AbilityModelBuilder conditionEffect(ConditionEffect conditionEffect) {
+	public EffectModelBuilder conditionEffect(ConditionEffect conditionEffect) {
 	    this.conditionEffect = conditionEffect;
 	    return this;
 	}
 
-	public AbilityModelBuilder timeEffect(TimeEffect timeEffect) {
+	public EffectModelBuilder timeEffect(TimeEffect timeEffect) {
 	    this.timeEffect = timeEffect;
 	    return this;
 	}
