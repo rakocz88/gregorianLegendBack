@@ -1,5 +1,6 @@
 package com.pilaf.tgl.effect.builder.action.items;
 
+import com.pilaf.tgl.commons.random.RandomCreator;
 import com.pilaf.tgl.effect.builder.enums.ParameterChangeValueType;
 import com.pilaf.tgl.effect.builder.enums.ParameterValueType;
 import com.pilaf.tgl.effect.builder.templates.ActionEffect;
@@ -9,7 +10,7 @@ public class ParameterChange implements ActionEffect {
 	private final ParameterValueType parameterValueType;
 	private final int fixedValueChange;
 	private final int dice;
-	private final int modyfier;
+	private final double modyfier;
 	private final ParameterChangeValueType parameterChangeValueType;
 
 	private ParameterChange(ParameterChangeBuilder parameterChangeBuilder) {
@@ -32,7 +33,7 @@ public class ParameterChange implements ActionEffect {
 		return dice;
 	}
 
-	public int getModyfier() {
+	public double getModyfier() {
 		return modyfier;
 	}
 
@@ -44,7 +45,7 @@ public class ParameterChange implements ActionEffect {
 		ParameterValueType parameterValueType;
 		int fixedValueChange;
 		int dice;
-		int modyfier;
+		double modyfier;
 		ParameterChangeValueType parameterChangeValueType;
 
 		public ParameterChangeBuilder parameterValueType(
@@ -63,7 +64,7 @@ public class ParameterChange implements ActionEffect {
 			return this;
 		}
 
-		public ParameterChangeBuilder modyfier(int modyfier) {
+		public ParameterChangeBuilder modyfier(double modyfier) {
 			this.modyfier = modyfier;
 			return this;
 		}
@@ -78,6 +79,25 @@ public class ParameterChange implements ActionEffect {
 			return new ParameterChange(this);
 		}
 
-	};
+	}
+
+	@Override
+	public void takeAction(int paramValue) {
+		System.out
+				.println(
+						"Changed  parameter " + parameterValueType
+								+ parameterChangeValueType + " by "
+								+ (fixedValueChange
+										+ (RandomCreator.oneToTen() * dice)
+										+ (modyfier * paramValue)));
+
+	}
+
+	@Override
+	public int returnValue(int paramValue) {
+		double modyfierValue = modyfier * paramValue;
+		int randValue = RandomCreator.rollDiceNumber(dice);
+		return (int) (fixedValueChange + (randValue) + (modyfierValue));
+	}
 
 }

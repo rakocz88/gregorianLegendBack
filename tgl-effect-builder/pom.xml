@@ -7,4 +7,12 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>tgl-effect-builder</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.pilaf</groupId>
+			<artifactId>tgl-Commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

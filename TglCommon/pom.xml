@@ -7,18 +7,5 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../tgl-parent</relativePath>
 	</parent>
-	<artifactId>tgl-effects</artifactId>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.pilaf</groupId>
-			<artifactId>tgl-effect-builder</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.pilaf</groupId>
-			<artifactId>tgl-Commons</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+	<artifactId>tgl-Commons</artifactId>
 </project>
