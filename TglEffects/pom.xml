@@ -15,9 +15,16 @@
 			<artifactId>tgl-effect-builder</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.pilaf</groupId>
 			<artifactId>tgl-Commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.pilaf</groupId>
+			<artifactId>tgl-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

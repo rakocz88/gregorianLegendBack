@@ -1,6 +1,6 @@
 package com.pilaf.tgl.effect.builder.time.items;
 
-import com.pilaf.tgl.effect.builder.templates.TimeEffect;
+import com.pilaf.tgl.api.effect.templates.TimeEffect;
 
 public class Hit implements TimeEffect {
 

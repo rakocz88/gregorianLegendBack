@@ -1,5 +1,0 @@
-package com.pilaf.tgl.effect.builder.enums;
-
-public enum ParameterValueType {
-	HEALTH, MANA, STREANTH, VITALITY, DEXTERITY, PERSONALITY, INTELIGENCE, WISDOM, SPEED, ENDURANCE, REFLEX, WILL, MAGICAL_RESISTANCE, ACTION_PONTS
-}

@@ -1,6 +1,6 @@
 package com.pilaf.tgl.effect.builder.area.items;
 
-import com.pilaf.tgl.effect.builder.enums.TargetType;
+import com.pilaf.tgl.api.effect.enums.TargetType;
 
 public class CircleEffectAreaTarget implements AreaTarget {
 	

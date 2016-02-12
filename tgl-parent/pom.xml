@@ -13,6 +13,8 @@
 	
 	<modules>
 		<module>../tgl-effect-builder</module>
+		<module>../TglCommon</module>
+		<module>../tglApi</module>
 		<module>../TglEffects</module>
 		<module>../TglAbilities</module>
 		<module>../musicFactory-backend-2</module>

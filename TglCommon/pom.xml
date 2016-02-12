@@ -8,4 +8,12 @@
 		<relativePath>../tgl-parent</relativePath>
 	</parent>
 	<artifactId>tgl-Commons</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.pilaf</groupId>
+			<artifactId>tgl-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

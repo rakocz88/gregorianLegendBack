@@ -3,8 +3,8 @@ package com.pilaf.tgl.effect.builder.condition.items;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pilaf.tgl.effect.builder.enums.CreatureType;
-import com.pilaf.tgl.effect.builder.templates.ConditionEffect;
+import com.pilaf.tgl.api.effect.enums.CreatureType;
+import com.pilaf.tgl.api.effect.templates.ConditionEffect;
 
 public class CreatureCondition implements ConditionEffect {
 

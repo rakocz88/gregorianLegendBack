@@ -1,7 +1,7 @@
 package com.pilaf.tgl.effect.builder.area.items;
 
-import com.pilaf.tgl.effect.builder.enums.TargetType;
-import com.pilaf.tgl.effect.builder.templates.AreaEffect;
+import com.pilaf.tgl.api.effect.enums.TargetType;
+import com.pilaf.tgl.api.effect.templates.AreaEffect;
 
 public class Target implements AreaEffect {
 	

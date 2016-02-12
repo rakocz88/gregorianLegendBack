@@ -1,14 +1,14 @@
 package com.pilaf.tgl.effect.builder.effects;
 
-import com.pilaf.tgl.effect.builder.Effect;
-import com.pilaf.tgl.effect.builder.EffectItem;
-import com.pilaf.tgl.effect.builder.EffectModel;
+import com.pilaf.tgl.api.effect.Effect;
+import com.pilaf.tgl.api.effect.EffectItem;
+import com.pilaf.tgl.api.effect.EffectModel;
+import com.pilaf.tgl.api.effect.enums.TargetType;
+import com.pilaf.tgl.api.effect.templates.ActionEffect;
+import com.pilaf.tgl.api.effect.templates.AreaEffect;
+import com.pilaf.tgl.api.effect.templates.TimeEffect;
 import com.pilaf.tgl.effect.builder.action.items.Heal;
 import com.pilaf.tgl.effect.builder.area.items.Target;
-import com.pilaf.tgl.effect.builder.enums.TargetType;
-import com.pilaf.tgl.effect.builder.templates.ActionEffect;
-import com.pilaf.tgl.effect.builder.templates.AreaEffect;
-import com.pilaf.tgl.effect.builder.templates.TimeEffect;
 import com.pilaf.tgl.effect.builder.time.items.TimePeriod;
 
 @Effect

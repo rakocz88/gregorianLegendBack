@@ -1,8 +1,8 @@
 package com.pilaf.tgl.effect.builder.action.items;
 
+import com.pilaf.tgl.api.effect.enums.MagicalDmgType;
+import com.pilaf.tgl.api.effect.templates.ActionEffect;
 import com.pilaf.tgl.commons.random.RandomCreator;
-import com.pilaf.tgl.effect.builder.enums.MagicalDmgType;
-import com.pilaf.tgl.effect.builder.templates.ActionEffect;
 
 public class MagicalDmg implements ActionEffect {
 

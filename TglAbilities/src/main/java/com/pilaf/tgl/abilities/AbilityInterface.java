@@ -2,7 +2,7 @@ package com.pilaf.tgl.abilities;
 
 import java.util.List;
 
-import com.pilaf.tgl.effect.builder.EffectModel;
+import com.pilaf.tgl.api.effect.EffectModel;
 
 public interface AbilityInterface {
     

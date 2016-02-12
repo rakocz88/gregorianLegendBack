@@ -1,6 +1,6 @@
 package com.pilaf.tgl.effect.builder.action.items;
 
-import com.pilaf.tgl.effect.builder.templates.ActionEffect;
+import com.pilaf.tgl.api.effect.templates.ActionEffect;
 
 public class Kill implements ActionEffect {
 
