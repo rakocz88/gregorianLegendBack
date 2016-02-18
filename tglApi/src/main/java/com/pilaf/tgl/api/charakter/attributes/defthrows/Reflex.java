@@ -5,8 +5,6 @@ import com.pilaf.tgl.api.effect.enums.ParameterValueType;
 
 public class Reflex extends DefeceThrow {
 
-    public int value = 0;
-
     @Override
     public DefenceThrowType defenceThrowType() {
 	return DefenceThrowType.Reflex;

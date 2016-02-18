@@ -4,7 +4,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.pilaf.tgl.abilities.spells.fire.F.FireBolt;
-import com.pilaf.tgl.api.charakter.attributes.person.CharakterInCombatBase;
+import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
 public class AbilityTest {
 
@@ -17,7 +17,7 @@ public class AbilityTest {
 
 	CharakterInCombatBase char1 = new CharakterInCombatBase.CharakterCombatBaseBuilder().build();
 	CharakterInCombatBase char2 = new CharakterInCombatBase.CharakterCombatBaseBuilder().build();
-	char1.getStrength().getValue();
+	char1.getCharakterMainParameters().getStrength().getValue();
 	int value = 0;
 	int paramValue = 5;
 	int iterationLength = 100;

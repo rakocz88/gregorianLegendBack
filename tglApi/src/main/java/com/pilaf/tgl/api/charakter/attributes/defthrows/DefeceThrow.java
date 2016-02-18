@@ -12,4 +12,12 @@ public abstract class DefeceThrow {
 	return null;
     }
 
+    public int getValue() {
+	return this.value;
+    }
+
+    public void setValue(int value) {
+	this.value = value;
+    }
+
 }

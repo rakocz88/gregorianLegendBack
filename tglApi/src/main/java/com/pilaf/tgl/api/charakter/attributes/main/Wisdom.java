@@ -2,18 +2,11 @@ package com.pilaf.tgl.api.charakter.attributes.main;
 
 import com.pilaf.tgl.api.effect.enums.ParameterValueType;
 
-public class Wisdom implements MainAttribute {
-
-    int value = 4;
-
-    @Override
-    public int getValue() {
-	return value;
-    }
+public class Wisdom extends MainAttribute {
 
     @Override
     public ParameterValueType parameterValueType() {
-	return ParameterValueType.KNOWLEDGE;
+	return ParameterValueType.WISDOM;
     }
 
 }
