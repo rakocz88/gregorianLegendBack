@@ -1,8 +1,8 @@
 package com.pilaf.tgl.effect.builder.trigger.items;
 
 import com.pilaf.tgl.api.effect.EffectModel;
-import com.pilaf.tgl.api.effect.enums.TriggerEffectType;
 import com.pilaf.tgl.api.effect.templates.TriggerEffect;
+import com.pilaf.tgl.api.enums.TriggerEffectType;
 
 public class TriggerCurEffect implements TriggerEffect {
 

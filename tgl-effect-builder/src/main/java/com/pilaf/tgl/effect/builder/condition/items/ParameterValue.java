@@ -1,8 +1,8 @@
 package com.pilaf.tgl.effect.builder.condition.items;
 
-import com.pilaf.tgl.api.effect.enums.ParameterValueType;
-import com.pilaf.tgl.api.effect.enums.ValueCondition;
 import com.pilaf.tgl.api.effect.templates.ConditionEffect;
+import com.pilaf.tgl.api.enums.ParameterValueType;
+import com.pilaf.tgl.api.enums.ValueCondition;
 
 public class ParameterValue implements ConditionEffect {
 

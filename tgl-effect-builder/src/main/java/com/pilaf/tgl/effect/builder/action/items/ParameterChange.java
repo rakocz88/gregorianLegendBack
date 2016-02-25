@@ -1,8 +1,8 @@
 package com.pilaf.tgl.effect.builder.action.items;
 
-import com.pilaf.tgl.api.effect.enums.ParameterChangeValueType;
-import com.pilaf.tgl.api.effect.enums.ParameterValueType;
 import com.pilaf.tgl.api.effect.templates.ActionEffect;
+import com.pilaf.tgl.api.enums.ParameterChangeValueType;
+import com.pilaf.tgl.api.enums.ParameterValueType;
 import com.pilaf.tgl.commons.random.RandomCreator;
 
 public class ParameterChange implements ActionEffect {

@@ -11,12 +11,28 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+	
 	<modules>
+		
+		<module>../tgl-common</module>
+		<module>../tgl-api</module>
 		<module>../tgl-effect-builder</module>
-		<module>../TglCommon</module>
-		<module>../tglApi</module>
-		<module>../TglEffects</module>
-		<module>../TglAbilities</module>
-		<module>../musicFactory-backend-2</module>
+		<module>../tgl-effects</module>
+		<module>../tgl-abilities</module>
+		<module>../tgl-weapons</module>
+		<module>../tgl-combat</module>
+		<module>../tgl-web</module>
 	</modules>
 </project>

@@ -1,7 +1,7 @@
 package com.pilaf.tgl.effect.builder.condition.items;
 
-import com.pilaf.tgl.api.effect.enums.DefenceThrowType;
 import com.pilaf.tgl.api.effect.templates.ConditionEffect;
+import com.pilaf.tgl.api.enums.DefenceThrowType;
 
 public class DefenceThrow implements ConditionEffect{
 	
