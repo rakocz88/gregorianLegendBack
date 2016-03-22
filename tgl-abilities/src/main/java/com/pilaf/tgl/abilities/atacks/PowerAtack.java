@@ -13,15 +13,16 @@ public class PowerAtack extends MaleAtackAction {
     @Override
     public CharakterInCombatBase atack(CharakterInCombatBase atacker, CharakterInCombatBase target) {
 	atacker.getCharakterPoints().getActionPoints().changeCurrentValue(-(-(getActionCost(atacker))));
-	System.out.println("POWER ATACK USED BY " + atacker.getCharName());
+	System.out.println("POWER ATACK USED BY " + atacker.getCharakterDescriptions().getName());
 	int atackValue = RandomCreator.rollDiceNumber(atacker.getCharakterBasicAtacksStats().getCurrentAtackDice());
 	atackValue = atackValue + atacker.getCharakterBasicAtacksStats().getCurrentBonusAtack();
 	atackValue -= ATACK_MOD_PENELTY;
 	int defenceValue = target.getCharakterDefences().getCharakterDodgeParam().getDodgeCurrentValue();
-	System.out.println(atacker.getCharName() + " atacks with value " + atackValue);
-	System.out.println(target.getCharName() + " has defence " + defenceValue);
+	System.out.println(atacker.getCharakterDescriptions().getName() + " atacks with value " + atackValue);
+	System.out.println(target.getCharakterDescriptions().getName() + " has defence " + defenceValue);
 	if (atackValue > defenceValue) {
-	    System.out.println(atacker.getCharName() + " hits " + target.getCharName());
+	    System.out.println(atacker.getCharakterDescriptions().getName() + " hits "
+		    + target.getCharakterDescriptions().getName());
 	    dealDmg(atacker, target);
 	}
 	return atacker;
@@ -33,11 +34,12 @@ public class PowerAtack extends MaleAtackAction {
 	int dmgRolls = atacker.getCharakterBasicAtacksStats().getCurrentDmgDice();
 	int dmgModyfier = atacker.getCharakterBasicAtacksStats().getCurrentBonusDmg();
 	int dmgDealt = (RandomCreator.rollDiceNumber(dmgRolls + DMG_DICE_BONUS) + dmgModyfier) / resistance;
-	System.out.println(atacker.getCharName() + " deals " + dmgDealt
-		+ atacker.getCharakterEquipment().getMainWeapon1().physicalDmgType() + " to " + target.getCharName());
+	System.out.println(atacker.getCharakterDescriptions().getName() + " deals " + dmgDealt
+		+ atacker.getCharakterEquipment().getMainWeapon1().physicalDmgType() + " to "
+		+ target.getCharakterDescriptions().getName());
 	target.getCharakterPoints().getHealth().changeCurrentValue(-(dmgDealt));
 	if (target.getCharakterPoints().getHealth().getCurrentValue() <= 0) {
-	    System.out.println(target.getCharName() + " is DEAD");
+	    System.out.println(target.getCharakterDescriptions().getName() + " is DEAD");
 	}
     }
 

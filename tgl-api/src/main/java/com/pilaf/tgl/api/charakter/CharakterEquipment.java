@@ -1,5 +1,6 @@
 package com.pilaf.tgl.api.charakter;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +9,12 @@ import com.pilaf.tgl.api.equipment.Equipment;
 import com.pilaf.tgl.api.equipment.Fists;
 import com.pilaf.tgl.api.equipment.Weapon;
 
-public class CharakterEquipment {
+public class CharakterEquipment implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private Weapon mainWeapon1 = new Fists();
     private Weapon offHand1;
     private Armor armor;

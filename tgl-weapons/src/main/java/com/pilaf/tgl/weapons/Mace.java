@@ -10,6 +10,11 @@ import com.pilaf.tgl.api.equipment.Weapon;
 
 public class Mace implements Weapon {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     public int atackPointsCosts() {
 	return 12;
     }

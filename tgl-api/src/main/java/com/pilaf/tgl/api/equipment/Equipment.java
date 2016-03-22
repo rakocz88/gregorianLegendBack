@@ -1,5 +1,7 @@
 package com.pilaf.tgl.api.equipment;
 
-public interface Equipment {
+import java.io.Serializable;
+
+public interface Equipment extends Serializable {
 
 }

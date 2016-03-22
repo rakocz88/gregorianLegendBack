@@ -10,6 +10,11 @@ import com.pilaf.tgl.api.enums.Resistances;
 
 public abstract class Resistance implements CharakterElems1 {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     public static final int INIT_START_RESISTANCE = 2;
 
     protected int rawValue;

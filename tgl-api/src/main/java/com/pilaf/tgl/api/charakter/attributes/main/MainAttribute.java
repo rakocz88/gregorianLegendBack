@@ -1,10 +1,17 @@
 package com.pilaf.tgl.api.charakter.attributes.main;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterElems1;
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 import com.pilaf.tgl.api.enums.ParameterValueType;
 
-public abstract class MainAttribute implements CharakterElems1 {
+public abstract class MainAttribute implements CharakterElems1, Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
 
     protected int rawValue = INIT_VALUE_PARAM;
 

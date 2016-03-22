@@ -1,5 +1,7 @@
 package com.pilaf.tgl.api.charakter.builders;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.attributes.main.Dexterity;
 import com.pilaf.tgl.api.charakter.attributes.main.Knowledge;
 import com.pilaf.tgl.api.charakter.attributes.main.Perception;
@@ -8,8 +10,12 @@ import com.pilaf.tgl.api.charakter.attributes.main.Strength;
 import com.pilaf.tgl.api.charakter.attributes.main.Vitality;
 import com.pilaf.tgl.api.charakter.attributes.main.Wisdom;
 
-public class CharakterMainParameters {
+public class CharakterMainParameters implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private Strength strength = new Strength();
     private Dexterity dexterity = new Dexterity();
     private Vitality vitality = new Vitality();

@@ -6,6 +6,11 @@ import com.pilaf.tgl.api.enums.Resistances;
 
 public class EnergyResistance extends Resistance {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     @Override
     public Resistances resistanceType() {
 	return Resistances.ENERGY;

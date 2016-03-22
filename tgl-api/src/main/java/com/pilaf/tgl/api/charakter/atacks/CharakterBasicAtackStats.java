@@ -1,12 +1,18 @@
 package com.pilaf.tgl.api.charakter.atacks;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 import com.pilaf.tgl.api.charakter.attributes.main.MainAttribute;
 import com.pilaf.tgl.api.charakter.builders.CharakterMainParameters;
 
-public class CharakterBasicAtackStats {
+public class CharakterBasicAtackStats implements Serializable {
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     private static final int BONUS_ATACK_DICE = 1;
 
     private int rawAtackDice;

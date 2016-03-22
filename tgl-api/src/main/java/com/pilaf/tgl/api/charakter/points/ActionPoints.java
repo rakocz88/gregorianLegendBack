@@ -5,6 +5,10 @@ import com.pilaf.tgl.api.enums.ParameterValueType;
 
 public class ActionPoints extends CharakterPointsCommon {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private ParameterValueType parameterValueType = ParameterValueType.ACTION_PONTS;
 
     public ParameterValueType getParameterValueType() {

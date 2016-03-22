@@ -11,16 +11,17 @@ public class PrescisiveAtack extends MaleAtackAction {
 
     @Override
     public CharakterInCombatBase atack(CharakterInCombatBase atacker, CharakterInCombatBase target) {
-	System.out.println(atacker.getCharName() + " invokes precisive atack");
+	System.out.println(atacker.getCharakterDescriptions().getName() + " invokes precisive atack");
 	atacker.getCharakterPoints().getActionPoints().changeCurrentValue(-(-(getActionCost(atacker))));
 	int atackValue = RandomCreator.rollDiceNumber(atacker.getCharakterBasicAtacksStats().getCurrentAtackDice());
 	atackValue = atackValue + atacker.getCharakterBasicAtacksStats().getCurrentBonusAtack();
 	atackValue += ATACK_MOD_BONUS;
 	int defenceValue = target.getCharakterDefences().getCharakterDodgeParam().getDodgeCurrentValue();
-	System.out.println(atacker.getCharName() + " atacks with value " + atackValue);
-	System.out.println(target.getCharName() + " has defence " + defenceValue);
+	System.out.println(atacker.getCharakterDescriptions().getName() + " atacks with value " + atackValue);
+	System.out.println(target.getCharakterDescriptions().getName() + " has defence " + defenceValue);
 	if (atackValue > target.getCharakterDefences().getCharakterDodgeParam().getDodgeCurrentValue()) {
-	    System.out.println(atacker.getCharName() + " hits " + target.getCharName());
+	    System.out.println(atacker.getCharakterDescriptions().getName() + " hits "
+		    + target.getCharakterDescriptions().getName());
 	    dealDmg(atacker, target);
 	}
 	return atacker;

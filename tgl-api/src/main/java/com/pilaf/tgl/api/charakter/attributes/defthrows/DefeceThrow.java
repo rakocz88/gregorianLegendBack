@@ -1,9 +1,15 @@
 package com.pilaf.tgl.api.charakter.attributes.defthrows;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.enums.DefenceThrowType;
 
-public abstract class DefeceThrow {
+public abstract class DefeceThrow implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     public int value = 0;
 
     public abstract DefenceThrowType defenceThrowType();

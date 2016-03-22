@@ -1,9 +1,15 @@
 package com.pilaf.tgl.api.charakter.points;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
-public class CharakterPoints {
+public class CharakterPoints implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private Health health = new Health();
     private ActionPoints actionPoints = new ActionPoints();
     private EnergyLevel energyLevel = new EnergyLevel();

@@ -1,9 +1,11 @@
 package com.pilaf.tgl.api.charakter.action;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 import com.pilaf.tgl.api.enums.ActionType;
 
-public interface ActiveAction {
+public interface ActiveAction extends Serializable {
 
     ActionType actionType();
 

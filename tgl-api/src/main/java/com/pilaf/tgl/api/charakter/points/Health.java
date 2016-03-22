@@ -5,6 +5,11 @@ import com.pilaf.tgl.api.enums.ParameterValueType;
 
 public class Health extends CharakterPointsCommon {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     private ParameterValueType parameterValueType = ParameterValueType.HEALTH;
 
     private static int HEALTH_PER_VIT_POINT = 5;

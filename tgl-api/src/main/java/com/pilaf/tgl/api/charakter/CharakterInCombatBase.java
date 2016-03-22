@@ -1,5 +1,7 @@
 package com.pilaf.tgl.api.charakter;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.action.CharakterActiveActions;
 import com.pilaf.tgl.api.charakter.atacks.CharakterBasicAtackStats;
 import com.pilaf.tgl.api.charakter.attributes.defthrows.CharakterDefenceThrows;
@@ -9,10 +11,14 @@ import com.pilaf.tgl.api.charakter.other.CharakterOtherFields;
 import com.pilaf.tgl.api.charakter.points.CharakterPoints;
 import com.pilaf.tgl.api.charakter.resistances.CharakterResistances;
 
-public class CharakterInCombatBase {
+public class CharakterInCombatBase implements Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
 
     // TODO MOVE TO CHARAKTER DESCRIPTIONS
-    private String charName;
 
     private CharakterMainParameters charakterMainParameters = new CharakterMainParameters();
     private CharakterDefenceThrows charakterDefenceThrows = new CharakterDefenceThrows();
@@ -69,14 +75,6 @@ public class CharakterInCombatBase {
 	this.charakterDefences = charakterDefences;
     }
 
-    public String getCharName() {
-	return charName;
-    }
-
-    public void setCharName(String charName) {
-	this.charName = charName;
-    }
-
     public CharakterDescriptions getCharakterDescriptions() {
 	return charakterDescriptions;
     }
@@ -124,7 +122,7 @@ public class CharakterInCombatBase {
 	this.charakterResistances.buildResistances(this);
 	this.charakterBasicAtacksStats.buildAtack(this);
 	this.charakterDefences.buildDefences(this);
-	this.charakterActiveActions.setAvailableActions(this);
+	this.charakterActiveActions.initAvailableActions(this);
 	this.charakterOtherFields.build(this);
 	return this;
     }
@@ -136,7 +134,7 @@ public class CharakterInCombatBase {
 	this.charakterResistances.initResistances(this);
 	this.charakterBasicAtacksStats.initAtack(this);
 	this.charakterDefences.initDefences(this);
-	this.charakterActiveActions.setAvailableActions(this);
+	this.charakterActiveActions.initAvailableActions(this);
 	this.charakterOtherFields.build(this);
 	return this;
     }

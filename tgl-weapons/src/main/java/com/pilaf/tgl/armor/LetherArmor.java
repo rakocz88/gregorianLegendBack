@@ -9,6 +9,11 @@ import com.pilaf.tgl.api.equipment.Armor;
 
 public class LetherArmor implements Armor {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     @Override
     public int weaponResistance() {
 	return 1;

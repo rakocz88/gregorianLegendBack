@@ -1,12 +1,14 @@
 package com.pilaf.tgl.api.charakter;
 
+import java.io.Serializable;
+
 /**
  * Interface for Main Attributes and Resistances
  * 
  * @author filip
  *
  */
-public interface CharakterElems1 {
+public interface CharakterElems1 extends Serializable {
 
     public static final int INIT_VALUE_PARAM = 4;
 

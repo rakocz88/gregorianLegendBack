@@ -1,12 +1,21 @@
 package com.pilaf.tgl.api.charakter;
 
-public class CharakterDescriptions {
+import java.io.Serializable;
+
+public class CharakterDescriptions implements Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
 
     private String name;
 
     private String charakterClass;
 
     private String race;
+
+    private String gender;
 
     private int size;
 
@@ -40,6 +49,14 @@ public class CharakterDescriptions {
 
     public void setSize(int size) {
 	this.size = size;
+    }
+
+    public String getGender() {
+	return gender;
+    }
+
+    public void setGender(String gender) {
+	this.gender = gender;
     }
 
 }

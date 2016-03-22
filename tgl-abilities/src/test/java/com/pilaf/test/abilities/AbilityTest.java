@@ -1,15 +1,7 @@
 package com.pilaf.test.abilities;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 public class AbilityTest {
 
-    @BeforeClass
-    public static void setUpBeforeClass() throws Exception {
-    }
-
-    @Test
     public void test() {
 
 	// CharakterInCombatBase char1 = new

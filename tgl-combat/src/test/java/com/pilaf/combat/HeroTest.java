@@ -20,7 +20,7 @@ public class HeroTest {
     public void test() {
 	long begin = System.currentTimeMillis();
 	CharakterInCombatBase hero = new CharakterInCombatBase();
-	hero.setCharName("Hero");
+	hero.getCharakterDescriptions().setName("Hero");
 	hero.getCharakterMainParameters().getDexterity().setModValue(+3);
 	hero.getCharakterDefences().getCharakterDodgeParam().setDodgeMod(3);
 	hero.getCharakterBasicAtacksStats().changeModBonusAtack(6);
@@ -41,7 +41,7 @@ public class HeroTest {
 	dobo.getCharakterBasicAtacksStats().changeModBonusAtack(10);
 	dobo.buildChar();
 
-	dobo.setCharName("Dobo");
+	hero.getCharakterDescriptions().setName("Dobo");
 	dobo.getCharakterActiveActions().addToActionList(new PowerAtack());
 	// BONUSES
 	dobo.getCharakterResistances().getElementalsResistance().changeRawValue(1);

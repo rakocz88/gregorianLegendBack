@@ -5,6 +5,11 @@ import com.pilaf.tgl.api.enums.ParameterValueType;
 
 public class Will extends DefeceThrow {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     @Override
     public DefenceThrowType defenceThrowType() {
 	return DefenceThrowType.Will;

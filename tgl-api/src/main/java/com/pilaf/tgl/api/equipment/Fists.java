@@ -9,6 +9,11 @@ import com.pilaf.tgl.api.enums.WeaponType;
 
 public class Fists implements Weapon {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     public int atackPointsCosts() {
 	return 8;
     }

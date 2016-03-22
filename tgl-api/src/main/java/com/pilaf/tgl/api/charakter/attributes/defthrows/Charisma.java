@@ -5,6 +5,11 @@ import com.pilaf.tgl.api.enums.ParameterValueType;
 
 public class Charisma extends DefeceThrow {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+
     public DefenceThrowType defenceThrowType() {
 	return DefenceThrowType.Charisma;
     }

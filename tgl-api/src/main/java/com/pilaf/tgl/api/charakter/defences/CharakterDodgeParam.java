@@ -1,9 +1,15 @@
 package com.pilaf.tgl.api.charakter.defences;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
-public class CharakterDodgeParam {
+public class CharakterDodgeParam implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private int dodgeRawValue;
     private int dodgeMod;
     private int dodgeCurMod;

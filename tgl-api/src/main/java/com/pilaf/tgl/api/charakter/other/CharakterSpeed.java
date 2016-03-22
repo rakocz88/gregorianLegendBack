@@ -1,8 +1,15 @@
 package com.pilaf.tgl.api.charakter.other;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
-public class CharakterSpeed {
+public class CharakterSpeed implements Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = -7874033275057717671L;
 
     private static final int STARTING_SPEED = 2;
 

@@ -1,7 +1,13 @@
 package com.pilaf.tgl.api.charakter.defences;
 
-public class CharakterShieldParam {
+import java.io.Serializable;
 
+public class CharakterShieldParam implements Serializable {
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     // TODO SHIELD
     private int shieldRawValue;
     private int shieldMod;

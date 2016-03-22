@@ -1,9 +1,15 @@
 package com.pilaf.tgl.api.charakter.other;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
-public class CharakterOtherFields {
+public class CharakterOtherFields implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private CharakterSpeed charakterSpeed = new CharakterSpeed();
 
     public CharakterSpeed getCharakterSpeed() {

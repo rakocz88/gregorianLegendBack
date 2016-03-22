@@ -1,9 +1,15 @@
 package com.pilaf.tgl.api.charakter.resistances;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 
-public class CharakterResistances {
+public class CharakterResistances implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private ElementalsResistance elementalsResistance = new ElementalsResistance();
     private WeaponResistance weaponResistance = new WeaponResistance();
     private EnergyResistance energyResistance = new EnergyResistance();

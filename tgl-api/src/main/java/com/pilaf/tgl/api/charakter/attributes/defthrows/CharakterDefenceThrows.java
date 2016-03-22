@@ -1,13 +1,18 @@
 package com.pilaf.tgl.api.charakter.attributes.defthrows;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 import com.pilaf.tgl.api.charakter.attributes.main.MainAttribute;
 import com.pilaf.tgl.api.charakter.builders.CharakterMainParameters;
 
-public class CharakterDefenceThrows {
+public class CharakterDefenceThrows implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private static final int STARTING_DEFENCE_THROW = 12;
     private static final int ATTRIBUTE_MODYFIER_DEFENCE_THROW = 2;
     private Will will = new Will();

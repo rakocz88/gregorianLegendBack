@@ -1,10 +1,16 @@
 package com.pilaf.tgl.api.charakter.points;
 
+import java.io.Serializable;
+
 import com.pilaf.tgl.api.charakter.CharakterInCombatBase;
 import com.pilaf.tgl.api.enums.ParameterValueType;
 
-public abstract class CharakterPointsCommon {
+public abstract class CharakterPointsCommon implements Serializable {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     private int currentValue;
     private int rawValue;
     private int modValue;
